@@ -8,45 +8,56 @@
     <meta name="author" content="Drew S">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&family=Work+Sans:wght@800&display=swap" rel="stylesheet"> 
     <script src="js/main.js" defer></script>
     <title>Drew Sulker</title>
 </head>
 <body>
     <header>
-        <nav class="topnav">
-            <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#aboutme">About</a></li>
-                <li><a href="#whereihaveworked">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-me">Contact</a></li>
-                <li><a href="./Master_Resume_1.06.pdf" download="">Resume</a></li>
-            </ul>
+        <nav aria-label="top main menu" role="navigation">
+            <div class="inner-nav">
+                <div class="logo"><a href="index.html">Drew Sulker</a></div>
+                <ul class="nav-links" role="list">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#whereihaveworked">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                    <li><a href="./Master_Resume_1.06.pdf" download="">Resume</a></li>
+                </ul>
+                <button aria-expanded="false" name="nav-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main class="content">
-        <aside>
-            <nav class="sidenav">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/drew-s-025201a6/">Linkedin</a></li>
-                    <li><a href="https://github.com/DreadlockDrew">Github</a></li>
-                    <li><a href="https://codepen.io/dreadlockdrew">Codepen</a></li>
-                </ul>
-            </nav>
-        </aside>
-
         <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">I am <span class="title-signature">Drew Sulker</span></h1>
-            <p class="section__subtitle section__subtitle--intro">I build things</p>
-            <img src="img/97.png" alt="a picture of the website creator smiling">
+            <div class="flex-md">
+                <div>
+                    <h1 class="section__title section__title--intro">I am <span class="title-signature">Drew Sulker</span></h1>
+                    <p class="section__subtitle section__subtitle--intro subtitle"><span class="subtitle">software dev, researcher, advocate</span></p>
+                </div>
+                    <img src="img/97.png" class="intro-pic" alt="a picture of the website creator smiling">
+            </div>
         </section>
     
         <section class="aboutme">
-            <h2>Hello!</h2>
-            <p>My name is Drew and I enjoy creating things that live online. My interest in programming began in 2016 when I decided to try editing Unity projects. That snowballed into a hobby that quickly became a passion.</p>
-            <p>Fast forward to today, and I have had the privilege of working in research, STEM communication, biotech, and as an advocate for underprivileged communities in STEM. 
-            <p>My main focus now is building accessible code with a strong focus on runtime efficiency.</p>
+            <div class="welcome-banner">
+                <div class="container">
+                    <h2>Hello!</h2>
+                    <div class="header-banner-flex">
+                        <p>My name is Drew and I enjoy creating things that live online. My interest in programming began in 2016 when I decided to try editing Unity projects. That snowballed into a hobby that quickly became a passion.</p>
+                        <p>Fast forward to today, and I have had the privilege of working in research, STEM communication, biotech, and as an advocate for underprivileged communities in STEM. 
+                        <p>My main focus now is building accessible code with a strong focus on runtime efficiency.</p>
+                    </div>
+                </div>
+            </div>
             <h2>About Me</h2>
             <p>I am a focused programmer pursuing a dual major in Computer Science and Mathematics and an experienced STEM communicator with nearly a decade of industry experience. These roles have required both creating and teaching software concepts at the university level.
             <p>This has given me a strong ability to distill and communicate complex design processes and ideas to others. Join me for a conversation about your company and its needs and potential roles that will be a good fit!</p>
@@ -60,6 +71,16 @@
                 Fusce at sodales elit. Nulla sed nibh a orci condimentum facilisis.
             </p>
         </section>
+
+        <aside>
+            <nav class="sidenav">
+                <ul role="list" class="flex-sm">
+                    <li><a href="https://www.linkedin.com/in/drew-s-025201a6/">Linkedin</a></li>
+                    <li><a href="https://github.com/DreadlockDrew">Github</a></li>
+                    <li><a href="https://codepen.io/dreadlockdrew">Codepen</a></li>
+                </ul>
+            </nav>
+        </aside>
     
         <section id="software-engineering" class="tabcontent">
             <h3>Software Engineering</h3>
@@ -75,44 +96,44 @@
             <div class="featuredprojects">
                 <section class="Featured-Project Project">
                     <h3>Featured Project</h3>
-                    <h4 class="Featured-Project-Project-Name">Lorem Ipsum</h4>
                         <iframe width="50" height="50" src="https://www.youtube.com/watch?v=8tPnX7OPo0Q"> </iframe>
                     <footer>Lorem Ipsum Github+External Links would go here</footer>
                 </section>
             </div>
             <div class="otherprojects">
-                <section class="project">
-                    <h3>Projects</h3>
-                    <h3 class="project-project-name">Python</h3>
-                    <iframe width="50" height="50" src="https://www.youtube.com/watch?v=8tPnX7OPo0Q"> </iframe>
-                    <footer>Lorem Ipsum Github+External Links would go here</footer>
-                </section>
-                <section class="project">
-                    <h3>Projects</h3>
-                    <h3 class="project-project-name">Scala</h3>
-                    <iframe width="50" height="50" src="https://www.youtube.com/watch?v=8tPnX7OPo0Q"> </iframe>
-                    <footer>Lorem Ipsum Github+External Links would go here</footer>
-                </section>
-                <section class="project">
-                    <h3>Projects</h3>
-                    <h3 class="project-project-name">C</h3>
-                    <iframe width="50" height="50" src="https://www.youtube.com/watch?v=8tPnX7OPo0Q"> </iframe>
-                    <footer>Lorem Ipsum Github+External Links would go here</footer>
-                </section>
+                <h3>Projects</h3>
+                <div class="project-flex">
+                    <section class="project">
+                        <h3 class="project-project-name">Python</h3>
+                        <iframe width="50" height="50" src="https://www.youtube.com/watch?v=8tPnX7OPo0Q"> </iframe>
+                        <footer>Lorem Ipsum Github+External Links would go here</footer>
+                    </section>
+                    <section class="project">
+                        <h3 class="project-project-name">Scala</h3>
+                        <iframe width="50" height="50" src="https://www.youtube.com/watch?v=8tPnX7OPo0Q"> </iframe>
+                        <footer>Lorem Ipsum Github+External Links would go here</footer>
+                    </section>
+                    <section class="project">
+                        <h3 class="project-project-name">C</h3>
+                        <iframe width="50" height="50" src="https://www.youtube.com/watch?v=8tPnX7OPo0Q"> </iframe>
+                        <footer>Lorem Ipsum Github+External Links would go here</footer>
+                    </section>
+                    <section class="project">
+                        <h3 class="project-project-name">Web Development</h3>
+                        <iframe width="50" height="50" src="https://www.youtube.com/watch?v=8tPnX7OPo0Q"> </iframe>
+                        <p>I'm new to the world of web development and hope to put some big projects here. Until then,</p>
+                        <a href="https://codepen.io/dreadlockdrew" target="_blank">check out my projects on codepen!</a>
+                        <footer>Lorem Ipsum Github+External Links would go here</footer>
+                    </section>
+                </div>
             </div>
-        </section>
-
-        <section id="web-development" class="tabcontent">
-            <h3>Web Development</h3>
-            <p>I'm new to the world of web development and hope to put some big projects here. Until then
-            <a href="https://codepen.io/dreadlockdrew" target="_blank">check out my projects on codepen!</a></p>
         </section>
 
         <section class="whereihaveworked">
             <h2>Where I Have Worked</h2>
             <section id="ubiome">
                 <img src="svg?" alt="uBiome logo" width="50" height="50">
-                <p>A brief paragraph detailng my work</p>
+                <p>A brief paragraph detailng my work this tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change</p>
             <h3>Ubiome</h3>
             </section>
         </section>
@@ -120,13 +141,13 @@
         <section id="ubuffalo">
             <img src="" alt="University at buffalo logo" width="50" height="50">
             <h3>The University At Buffalo</h3>
-            <p>A brief paragraph detailng my work</p>
+            <p>A brief paragraph detailng my work this tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change</p>
         </section>
 
         <section id="rfcuny">
             <img src="" alt="rfcuny logo" width="50" height="50">
             <h3>The Research Foundation of CUNY</h3>
-            <p>A brief paragraph detailng my work</p>
+            <p>A brief paragraph detailng my work this tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change</p>
         </section>
     
         <section id="contact-me">
