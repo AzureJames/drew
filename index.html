@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&family=Work+Sans:wght@800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet"> 
     <script src="js/main.js" defer></script>
     <title>Drew Sulker</title>
 </head>
@@ -25,7 +25,7 @@
                     <li><a href="#whereihaveworked">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact-me">Contact</a></li>
-                    <li><a href="./Master_Resume_1.06.pdf" download="">Resume</a></li>
+                    <li><a href="./Master_Resume_1.06.pdf">Resume</a></li>
                 </ul>
                 <button aria-expanded="false" name="nav-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
@@ -39,7 +39,7 @@
     <main class="content">
         <section class="intro" id="home">
             <div class="flex-md">
-                <div>
+                <div class="p1">
                     <h1 class="section__title section__title--intro">I am <span class="title-signature">Drew Sulker</span></h1>
                     <p class="section__subtitle section__subtitle--intro subtitle"><span class="subtitle">software dev, researcher, advocate</span></p>
                 </div>
@@ -47,7 +47,7 @@
             </div>
         </section>
     
-        <section class="aboutme">
+        <section class="aboutme" id="aboutme">
             <div class="welcome-banner">
                 <div class="container">
                     <h2>Hello!</h2>
@@ -91,7 +91,7 @@
             </p>
         </section>  
             
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Project Gallery</h2>
             <div class="featuredprojects">
                 <section class="Featured-Project Project">
@@ -122,30 +122,30 @@
                         <h3 class="project-project-name">Web Development</h3>
                         <iframe width="50" height="50" src="https://www.youtube.com/watch?v=8tPnX7OPo0Q"> </iframe>
                         <p>I'm new to the world of web development and hope to put some big projects here. Until then,</p>
-                        <a href="https://codepen.io/dreadlockdrew" target="_blank">check out my projects on codepen!</a>
+                        <a href="https://codepen.io/dreadlockdrew" target="_blank" class="my1 d-ib">check out my projects on codepen!</a>
                         <footer>Lorem Ipsum Github+External Links would go here</footer>
                     </section>
                 </div>
             </div>
         </section>
 
-        <section class="whereihaveworked">
+        <section class="whereihaveworked" id="whereihaveworked">
             <h2>Where I Have Worked</h2>
             <section id="ubiome">
-                <img src="svg?" alt="uBiome logo" width="50" height="50">
+                <img src="img/ubiome.jpg" alt="uBiome logo" width="180" height="60">
+                <h3>Ubiome</h3>
                 <p>A brief paragraph detailng my work this tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change</p>
-            <h3>Ubiome</h3>
             </section>
         </section>
 
         <section id="ubuffalo">
-            <img src="" alt="University at buffalo logo" width="50" height="50">
+            <img src="img/ub.png" alt="University at buffalo logo" width="180" height="60">
             <h3>The University At Buffalo</h3>
             <p>A brief paragraph detailng my work this tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change</p>
         </section>
 
         <section id="rfcuny">
-            <img src="" alt="rfcuny logo" width="50" height="50">
+            <img src="img/rfcuny_logo_new.png" alt="rfcuny logo" width="180" height="60">
             <h3>The Research Foundation of CUNY</h3>
             <p>A brief paragraph detailng my work this tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change</p>
         </section>
@@ -153,10 +153,8 @@
         <section id="contact-me">
             <h2>Contact Me</h2>
             <p>My inbox is always open. Whether you have a question, an offer, or just want to say hello!</p>
-            <a href="mailto:drewsulker@gmail.com">Contact me by email!</a> 
-            <a href="https://www.linkedin.com/in/drew-s-025201a6/">Say hello on Linkedin!</a>
-        </section>
-        <section id="resources">
+            <a href="mailto:drewsulker@gmail.com">Contact me by email</a> 
+            <a href="https://www.linkedin.com/in/drew-s-025201a6/">Say hello on Linkedin</a>
         </section>
     </main>
 </body>
