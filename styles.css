@@ -217,7 +217,7 @@ nav a:active {
     border: .2rem solid rgb(105, 236, 206);
     top: 0.4rem;
     padding: 0.2rem;
-    min-width: 9.3rem;
+    min-width: 6.3rem;
     text-align: center;
     border-radius: .3rem;
 }
@@ -254,7 +254,7 @@ aside {
 
 aside nav {
     position: relative;
-    right: 160px;
+    right: 133px;
 }
 
 aside li {
@@ -265,6 +265,11 @@ aside li {
     margin: 0 auto;
 }
 @media screen and (min-width: 700px) {
+    aside nav {
+        position: relative;
+        right: 151px;
+    }
+
     .intro-pic {
         margin: 0;
     }
