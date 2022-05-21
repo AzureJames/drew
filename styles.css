@@ -1,9 +1,9 @@
 
 :root {
-    --violet: #6d4f7e;
-    --white: #f4f4f2;
-    --black: #292929;
-    --green: #90be5c;
+    --violet: rgb(9, 18, 32);
+    --white: rgb(201, 209, 236); 
+    --black: rgb(13, 30, 56);
+    --green: rgb(105, 236, 206);
 }
 
 body {
@@ -12,11 +12,6 @@ body {
 }
 
 .flex-sm {
-    display: flex;
-    justify-content: space-around;
-}
-
-.flex-md {
     display: flex;
     justify-content: space-around;
 }
@@ -33,10 +28,29 @@ body {
     display: inline-block;
 }
 
+.d-b {
+    display: block;
+}
+
+.w-50 {
+    max-width: 50%;
+}
+
 .white {
     color: var(--white);
 }
 
+.ai-c {
+    align-items: center;
+}
+
+.ta-c {
+    text-align: center;
+}
+
+.m-a {
+    margin: 0 auto;
+}
 
 @media screen and (min-width: 700px){
     .flex-md {
@@ -64,28 +78,26 @@ body h1 {
 p, a,
 input {
     font-family: 'Source Sans Pro', sans-serif;
-    color: var(--white)
+    color: var(--white);
+    max-width: 95vw;
 }
 
 h1 {
     font-size: clamp(2.4rem, 5.2vw, 5rem);
     text-align: center;
-    color: var(--white);
+    color: var(--green);
     min-width: 50vw;
 }
 
 h2 {
 font-size: clamp(2.4rem, 5.2vw, 5rem);
 color: var(--green);
-}
-
-h2>a:hover {
-    animation: chgborder 2s ease-in-out 0s 2 alternate backwards;
+text-align: center;
 }
 
 h3, .subtitle{
     font-size: clamp(1.125rem, 2.52vw, 2.25rem);
-    color: var(--white)
+    color: var(--green)
 }
 
 p {
@@ -202,9 +214,9 @@ nav a:active {
 .logo {
     position: relative;
     margin-right: .3rem;
-    border: .1rem solid #f4f4f2;
+    border: .2rem solid rgb(105, 236, 206);
     top: 0.4rem;
-    padding: 0.3rem;
+    padding: 0.2rem;
     min-width: 9.3rem;
     text-align: center;
     border-radius: .3rem;
@@ -233,6 +245,30 @@ nav button:active > svg {
 }
 
 /*main content*/
+
+aside {
+    position: sticky;
+    margin-left: 100%;
+    top: 1.5rem;
+}
+
+aside nav {
+    position: relative;
+    right: 160px;
+}
+
+aside li {
+    margin-bottom: 1.5rem;
+}
+
+.intro-pic {
+    margin: 0 auto;
+}
+@media screen and (min-width: 700px) {
+    .intro-pic {
+        margin: 0;
+    }
+}
 
 .content {
     padding: 0rem .5rem;
@@ -279,6 +315,22 @@ nav button:active > svg {
     }
 }
 
+.center-container {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.center-container h2,
+.center-container h3,
+.center-container p,
+.center-container a,
+.center-container img,
+.center-container>* {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
 @media screen and (min-width: 700px) {
     .project-flex {
         display: flex;
@@ -291,8 +343,10 @@ nav button:active > svg {
     }
 }
 
-.ai-c {
-    align-items: center;
+#contact-me a {
+    display: inline-block;
+    margin: 1.5rem auto;
+    
 }
 
 section {
@@ -313,7 +367,7 @@ section {
 main a,
 input[type=search] {
     border-radius: 10rem;
-    border: .1rem solid var(--white);
+    border: .2rem solid rgb(105, 236, 206);
     padding: .5rem;
     text-decoration: none;
     margin-bottom: 1rem;
